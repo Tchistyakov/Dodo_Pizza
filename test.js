@@ -353,3 +353,17 @@ for (let i = 0; i < beverage.length; i++) {
     pizzaCard.innerHTML = card
     document.getElementById('beverage').append(pizzaCard)
 }
+
+
+for (let i = 0; i < newpop.length; i++) {
+    let card = `
+    <div class="new-and-pop_card">
+                        <div class="bar-card_image_small">
+                            <img src="pictures/cezar_small.jpg">
+                        </div>
+                        <div class="card_small_description">
+                            <p class="card-small_name">Цезарь</p>
+                            <p class="card_price">от 445&#8381</p>
+                        </div>
+                    </div>`
+}
