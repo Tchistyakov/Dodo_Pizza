@@ -298,7 +298,7 @@ for (let i = 0; i < desert.length; i++) {
 
 let beverage = [
     {
-        src: 'pictures/beverage_m/cola.jpg',
+        src: 'pictures/beverage_m/Cola.jpg',
         name: '2 Coca-Cola по суперцене',
         description: 'Две классические Coca-Cola по 0,5 литров по выгодной цене, 0,5 л',
         cost: '99', 
@@ -354,16 +354,47 @@ for (let i = 0; i < beverage.length; i++) {
     document.getElementById('beverage').append(pizzaCard)
 }
 
+// creat array 'new and pop slidebar'
+
+let newpop = [
+    {
+        src: 'pictures/pizza_s/cezar_small.jpg',
+        name: 'Цезарь',
+        description: 'Классическая пицца с курицей, овощами и сыром',
+        cost: '445', 
+    },
+    {
+        src: 'pictures/pizza_s/nezh-losos_small.jpg',
+        name: 'Нежный лосось',
+        description: 'Классическая пицца с филе северноморского лосося',
+        cost: '495', 
+    },
+    {
+        src: 'pictures/pizza_s/karbonara_small.jpg',
+        name: 'Карбонара',
+        description: 'Классическая пицца с курицей и сырным соусом',
+        cost: '395', 
+    },
+    {
+        src: 'pictures/pizza_s/twopizza_small.jpg',
+        name: 'Две пиццы',
+        description: 'Выгодное предложение, две пиццы на выбор',
+        cost: '899', 
+    },
+]
 
 for (let i = 0; i < newpop.length; i++) {
     let card = `
-    <div class="new-and-pop_card">
-                        <div class="bar-card_image_small">
-                            <img src="pictures/cezar_small.jpg">
-                        </div>
-                        <div class="card_small_description">
-                            <p class="card-small_name">Цезарь</p>
-                            <p class="card_price">от 445&#8381</p>
-                        </div>
-                    </div>`
+    <div class="bar-card_image_small">
+        <img src="${newpop[i].src}">
+    </div>
+    <div class="card_small_description">
+        <p class="card-small_name">${newpop[i].name}</p>
+        <p class="card_price">от ${newpop[i].cost}&#8381</p>
+    </div>`
+    
+let pizzaCard = document.createElement('div')
+pizzaCard.className = 'new-and-pop_card'
+pizzaCard.innerHTML = card
+document.getElementById('new-and-pop').append(pizzaCard)
 }
