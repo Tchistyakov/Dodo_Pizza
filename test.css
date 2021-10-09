@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+
 html, body {
     margin: 0px;
     padding: 0px;
@@ -415,6 +417,35 @@ span {
     height: 167px;
 }
 
+.product_card {
+    display: flex;
+    position: relative;
+    width: 920px;
+    height: 610px;
+    left: 180px;
+    top: 151px;
+    background: #FFFFFF;
+    box-shadow: 0px 6px 55px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    /* overflow: hidden; */
+}
+
+.product_card_left {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 540px;
+    height: 610px;
+}
+
+.product_card_right {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 380px;
+    height: 610px;
+}
+
 @media screen and (min-width: 321px) {
 
 .static-menu__logotype_small {
@@ -601,6 +632,7 @@ span {
     height: 149px;
     margin: 0 10px 70px 10px;
     display: flex;
+    border-top: 1px solid #F3F3F7;
 }
 
 .card_image_small {
@@ -719,5 +751,6 @@ span {
     height: 130px;
     justify-content: space-evenly;
 }
+
 
 }
