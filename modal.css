@@ -1,6 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+
+* {
+    font-family: Nunito;
+}
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    background-color: #3D3D3D;;
+}
+
+a {
+    text-decoration: none;
+}
+
+span {
+    margin-right: 10px;
+}
+
+.product_card {
+    display: flex;
+    position: relative;
+    width: 920px;
+    height: 610px;
+    left: 180px;
+    top: 151px;
+    background: #FFFFFF;
+    box-shadow: 0px 6px 55px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    /* overflow: hidden; */
+}
+
+.product_card_left {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 570px;
+    height: 610px;
+}
+
+.product_card_right {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 350px;
+    height: 610px;
+}
+
 .card_topping {
+    margin-top: 11px;
+    margin-bottom: 20px;
+    padding: 0;
+    width: 265px;
+    height: 60px;
+    box-sizing: content-box;
     font-family: Arial;
     font-size: 13px;
-    line-height: 15px;
+    line-height: 18px;
     color: #4D4D4D;
+}
+
+.strike {
+    text-decoration: line-through;
+    white-space: nowrap;
+}
+
+.underline {
+    text-decoration: underline dashed;
+    white-space: nowrap;
+}
+
+svg {
+    width: 14px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 2px;
+    left: 4px;
+}
+
+.product_size {
+    display: flex;
+    justify-content: space-between;
+    width: 320px;
+    height: 32px;
+    background-color: #F3F3F7;
+    border-radius: 50px;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.size-select_font {
+    font-family: Nunito;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #000000;
+    opacity: 0.7;
+    text-align: center;
+    justify-content: center;
+}
+
+.size-select {
+    width: 104px;
+    height: 28px;
+    border-radius: 50px;
+    margin: 0 2px;
+    display: flex;
+    align-items: center;
+}
+
+.size-select_dough {
+    width: 157px;
+}
+
+.size-select:hover {
+    background-color: #fff;
+    opacity: 1;
+}
+
+.img-topping {
+    width: 330px;
+    height: 310px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.section-name {
+    margin: 30px 0 3px;
+}
+
+.card_descript {
+    margin-bottom: 11px;
+}
+
+.card_price {
+    margin: 17px 0 11px;
+}
+
+.topping-card {
+    width: 100px;
+    height: 150px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 5px rgba(6, 5, 50, 0.05);
+    border-radius: 12px;
+    margin: 0;
+}
+
+.topping-name {
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    margin-top: -2px;
+}
+
+.cart_text_small {
+    position: relative;
+    margin-top: 5px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+}
+
+.topping-img {
+    margin: 0;
+    text-align: center;
+}
+
+.modal-btn {
+    position: absolute;
+    top: 532px;
+    width: 320px;
+    height: 48px;
+    border-radius: 50px;
+}
+
+.elips {
+    position: absolute;
+    top: 76px;
+    left: 38px;
+    margin: 0;
+    width: 458px;
+    height: 458px;
+    border-radius: 50%;
+}
+
+.product_cart_img {
+    position: relative;
+    width: 372px;
+    height: 372px;
+    top: 124px;
+    left: 93px;
 }
