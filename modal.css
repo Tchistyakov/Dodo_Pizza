@@ -274,3 +274,116 @@ svg {
     height: 48px;
     border-radius: 50px;
 }
+
+@media screen and (max-width: 320px) {
+
+body {
+    max-width: 3200px;
+    height: 100%;
+}
+
+.product_card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 320px;
+    height: 1200px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 0px;
+    margin: 0 auto;     
+}
+
+.product_card_left {
+    width: 320px;
+    height: 320px;
+}
+
+.product_cart_img {
+    width: 288px;
+    height: 288px;
+    position: relative;
+    top: 26px;
+    left: 16px;
+    bottom: 6px;
+}
+
+.elips {
+    display: none;
+}
+
+.product_card_right {
+    width: 288px;
+    height: 687px;
+    margin: 0 auto;
+}
+
+.section-name {
+    margin: 0px;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.card_descript {
+    font-size: 14px;
+    line-height: 19px;
+    margin: 0px;
+}
+
+.product_size {
+    width: 288px;
+}
+
+.img-topping {
+    width: 288px;
+    height: 470px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.topping-card {
+    width: 140px;
+    margin-bottom: 10px;
+}
+
+.button-cart_text {
+    display: block;
+}
+
+.topping-img-pass {
+    display: none;
+}
+
+.card_price {
+    display: block;
+}
+
+.topping-name {
+    text-align: center;
+    margin-top: 0px;
+}
+
+.modal-btn {
+    position: relative;
+    top: 30px;
+    width: 288px;
+    height: 48px;
+    border-radius: 50px;
+}
+
+.modal-btn2 {
+    position: relative;
+    top: 30px;
+    width: 288px;
+    height: 48px;
+    border-radius: 50px;
+}
+
+.product-cart {
+    display: none;
+}
+
+
+}
