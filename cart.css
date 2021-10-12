@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+
+* {
+    font-family: Nunito;
+}
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+.body-cart {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-cart {
+    width: 1060;
+    height: 98px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.header-cart_logo {
+    position: relative;
+    top: 25px;
+    left: 110px;
+}
