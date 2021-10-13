@@ -83,15 +83,16 @@ let onese = `
     </div>
     <div class="card_footer">
         <h4 class="card_price">от ${pizza[0].cost}&#8381</h4>
-        <button class="button_to-collect">
-            <p class="button-cart_text">Собрать</p>
-            <p class="button-cart_text_small">от ${pizza[0].cost}&#8381</p>
+        <button class="button_to-collect" >
+            <p class="button-cart_text" onclick=modal_open()>Собрать</p>
+            <p class="button-cart_text_small" onclick=modal_open ()>от ${pizza[0].cost}&#8381</p>
         </button>
     </div>
 </div>`
 
 let half = document.createElement('div')
 half.className = 'menu__card menu__card_small'
+half.id = 'pizza0'
 half.innerHTML = onese
 document.getElementById('pizza').append(half)
 
@@ -108,14 +109,15 @@ for (let i = 1; i < pizza.length; i++) {
     <div class="card_footer">
         <h4 class="card_price">от ${pizza[i].cost}&#8381</h4>
         <button class="button_to-collect button_to-collect_secondary">
-            <p class="button-cart_text button-cart_text_secondary">Выбрать</p>
-            <p class="button-cart_text_small button-cart_text_secondary">от ${pizza[i].cost}&#8381</p>
+            <p class="button-cart_text button-cart_text_secondary" onclick=modal_open()>Выбрать</p>
+            <p class="button-cart_text_small button-cart_text_secondary" onclick=modal_open()>от ${pizza[i].cost}&#8381</p>
         </button>
     </div>
 </div>`
     
     let pizzaCard = document.createElement('div')
     pizzaCard.className = 'menu__card menu__card_small'
+    pizzaCard.id = 'pizza' + i
     pizzaCard.innerHTML = card
     document.getElementById('pizza').append(pizzaCard)
 }
@@ -175,6 +177,7 @@ for (let i = 0; i < kombo.length; i++) {
     
     let pizzaCard = document.createElement('div')
     pizzaCard.className = 'menu__card menu__card_small'
+    pizzaCard.id = 'kombo' + i
     pizzaCard.innerHTML = card
     document.getElementById('kombo').append(pizzaCard)
 }
@@ -234,6 +237,7 @@ for (let i = 0; i < snack.length; i++) {
     
     let pizzaCard = document.createElement('div')
     pizzaCard.className = 'menu__card menu__card_small menu__card_snack'
+    pizzaCard.id = 'snack' + i
     pizzaCard.innerHTML = card
     document.getElementById('snack').append(pizzaCard)
 }
@@ -292,6 +296,7 @@ for (let i = 0; i < desert.length; i++) {
     
     let pizzaCard = document.createElement('div')
     pizzaCard.className = 'menu__card menu__card_small menu__card_desert'
+    pizzaCard.id = 'desert' + i
     pizzaCard.innerHTML = card
     document.getElementById('desert').append(pizzaCard)
 }
@@ -350,6 +355,7 @@ for (let i = 0; i < beverage.length; i++) {
     
     let pizzaCard = document.createElement('div')
     pizzaCard.className = 'menu__card menu__card_small menu__card_beverage'
+    pizzaCard.id = 'beverage' + i
     pizzaCard.innerHTML = card
     document.getElementById('beverage').append(pizzaCard)
 }
@@ -395,6 +401,7 @@ for (let i = 0; i < newpop.length; i++) {
     
 let pizzaCard = document.createElement('div')
 pizzaCard.className = 'new-and-pop_card'
+pizzaCard.id = 'newpop' + i
 pizzaCard.innerHTML = card
 document.getElementById('new-and-pop').append(pizzaCard)
 }
