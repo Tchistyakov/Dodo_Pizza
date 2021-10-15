@@ -13,6 +13,7 @@ a {
 body {
     max-width: 1280px;
     height: 100%;
+    margin: 0 auto;
     /* padding: 0 110px; */
 }
 .main-header {
@@ -419,6 +420,25 @@ span {
 
 /* modal window */
 
+#modal-layout {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+#modal-pizza {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* modal window */
+
 .span {
     margin-right: 10px;
 }
@@ -574,6 +594,7 @@ svg {
 }
 
 .topping-name {
+    font-family: Nunito;
     font-size: 12px;
     line-height: 16px;
     text-align: center;
@@ -581,6 +602,7 @@ svg {
 }
 
 .cart_text_small {
+    font-family: Nunito;
     position: relative;
     margin-top: -5px;
     font-weight: 600;
