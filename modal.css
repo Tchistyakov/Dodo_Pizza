@@ -278,7 +278,7 @@ svg {
 @media screen and (max-width: 320px) {
 
 body {
-    max-width: 3200px;
+    max-width: 320px;
     height: 100%;
 }
 
