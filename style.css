@@ -201,7 +201,7 @@ body {
 }
 
 .main__pizza {
-    width: 1060px;
+    max-width: 1060px;
     margin: 0 auto;
 }
 
@@ -699,6 +699,70 @@ svg {
     width: 320px;
     height: 48px;
     border-radius: 50px;
+}
+
+.body-cart {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.header-cart {
+    max-width: 1060px;
+    display: flex;
+    justify-content: space-between;
+    height: 98px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.logo-cart {
+    width: 249px;
+    height: 48px;
+}
+
+.header-cart_logo {
+    margin-top: 28px;
+}
+
+.step-cart {
+    width: 420px;
+    height: 98px;
+    display: flex;
+}
+
+.stage {
+    height: 98px;
+    margin-top: 28px;
+}
+
+.stage1 {
+    width: 57px;
+    height: 52px;
+    margin: 28px 0px;
+}
+
+.stage2 {
+    width: 132px;
+    height: 52px;
+    margin: 28px -37.5px;
+}
+
+.stage3 {
+    width: 89px;
+    height: 52px;
+    margin: 28px -16px;
+}
+
+.stage-line {
+    width: 114px;
+    height: 1px;
+    margin-top: 32px;
+}
+
+.main-cart {
+    max-width: 1060px;
+    min-height: 100%;
 }
 
 

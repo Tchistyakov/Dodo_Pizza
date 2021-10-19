@@ -519,16 +519,16 @@ function openModal(event) {
 
 function openOtherModal(event) {
     const other = kombo.concat(snack, desert, beverage)
-    let object = other.find(el => el.id == event.currentTarget.id)
+    let obj = other.find(el => el.id == event.currentTarget.id)
     const modalOther = `
     <div class="product-cart">
             <div class="cart-left">
-                <img src="${object.src}" alt="${object.name}" class="product_cart_img2">
+                <img src="${obj.src}" alt="${obj.name}" class="product_cart_img2">
             </div>
             <div class="cart-right">
-                <h3 class="section-name h3_font">${object.name}</h3>
-                <p class="card_descript">${object.description}</p>
-                <p class="cart_desc_small">${object.description}</p>
+                <h3 class="section-name h3_font">${obj.name}</h3>
+                <p class="card_descript">${obj.description}</p>
+                <p class="cart_desc_small">${obj.description}</p>
                 <button class="modal-btn modal-btn2 button-cart"><p class="button-cart_text">Добавить в корзину за ${object.cost}₽</p></button>
             </div>
             <div class="clouse-wind" onclick='clouseModal()'>
