@@ -82,8 +82,7 @@ let onese = `
             <p class="button-cart_text_small">от ${pizza[0].cost}&#8381</p>
         </button>
     </div>
-</div>
-`
+</div>`
 
 let half = document.createElement('div')
 half.className = 'menu__card menu__card_small'
@@ -157,30 +156,29 @@ let kombo = [
 
 for (let i = 0; i < kombo.length; i++) {
     let card = `
-        <figure class="card_image_big">
-            <img class="card_image_small" src="${kombo[i].src}" alt="${kombo[i].name}">
-        </figure>
-        <div class="card_des_col">
-            <div>
-                <h3 class="card_name">${kombo[i].name}</h3>
-                <p class="card_descript">${kombo[i].description}</p>
-            </div>
-            <div class="card_footer">
-                <h4 class="card_price">от ${kombo[i].cost}&#8381</h4>
-                <button class="button_to-collect" onclick='openOtherModal(event)' id='${kombo[i].id}'>
-                    <p class="button-cart_text">Собрать</p>
-                    <p class="button-cart_text_small">от ${kombo[i].cost}&#8381</p>
-                </button>
-            </div>
-        </div>`
+<figure class="card_image_big">
+    <img class="card_image_small" src="${kombo[i].src}" alt="${kombo[i].name}">
+</figure>
+<div class="card_des_col">
+    <div>
+        <h3 class="card_name">${kombo[i].name}</h3>
+        <p class="card_descript">${kombo[i].description}</p>
+    </div>
+    <div class="card_footer">
+        <h4 class="card_price">от ${kombo[i].cost}&#8381</h4>
+        <button class="button_to-collect" onclick='openOtherModal(event)' id='${kombo[i].id}'>
+            <p class="button-cart_text">Собрать</p>
+            <p class="button-cart_text_small">от ${kombo[i].cost}&#8381</p>
+        </button>
+    </div>
+</div>`
     
     let pizzaCard = document.createElement('div')
     pizzaCard.className = 'menu__card menu__card_small'
     pizzaCard.id = myId('kombo')
     pizzaCard.innerHTML = card
     document.getElementById('kombo').append(pizzaCard)
-}  
-
+}
 
 let snack = [
     {
@@ -430,7 +428,7 @@ function openModal(event) {
             <figure class="product_card_left">
                 <img src="${obj.src}" alt="${obj.name}" class="product_cart_img">
                 <figure class="elips">
-                    <img src="pictures/svg/Ellipse.svg" alt="elips">
+                    <img src="pictures/svg/Ellipse 6.svg" alt="elips">
                 </figure>
             </figure>
             <div class="product_card_right">
@@ -531,7 +529,7 @@ function openOtherModal(event) {
                 <h3 class="section-name h3_font">${obj.name}</h3>
                 <p class="card_descript">${obj.description}</p>
                 <p class="cart_desc_small">${obj.description}</p>
-                <button class="modal-btn modal-btn2 button-cart"><p class="button-cart_text">Добавить в корзину за ${obj.cost}₽</p></button>
+                <button class="modal-btn modal-btn2 button-cart"><p class="button-cart_text">Добавить в корзину за ${object.cost}₽</p></button>
             </div>
             <div class="clouse-wind" onclick='clouseModal()'>
                 <img src="pictures/svg/close.svg" alt="закрыть">

@@ -1,10 +1,9 @@
-// import myId from 'generator_id/generator_id.js'
-import {array} from './array/array.js'
+import body from './main/body.js'
+import appendToHTML from "./body/append.js"
+        
 
-
-
-const app = (array) => {
-    console.log(array())
+const app = () => {
+    body()
+    appendToHTML()
 }
-
 export default app
