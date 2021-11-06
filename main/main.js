@@ -1,8 +1,10 @@
-const main = `
-<figure class="main__slider"> <!--desktop version-->
+function main() {
+
+return `
+<figure class="main__slider" id="slider"> <!--desktop version-->
     <img class="main__slider_image" src="pictures/slide_1.png" alt="this is slider">
 </figure>
-<figure class="main__slider_small"> <!--mobile version-->
+<figure class="main__slider_small" id="slider_s"> <!--mobile version-->
     <img class="main__slider_image" src="pictures/slide_s.png" alt="this is slider">
 </figure>
 
@@ -44,6 +46,6 @@ const main = `
     </div>
 </section>
 `
-
+}
 
 export default main

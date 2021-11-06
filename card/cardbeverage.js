@@ -1,4 +1,4 @@
-import {beverage} from '../array/array.js'
+import {beverage} from '../array/array_old.js'
 import { openOtherModal } from '../modalwindow/modalwindow.js'
 
 function beverages() {

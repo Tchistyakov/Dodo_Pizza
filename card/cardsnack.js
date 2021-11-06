@@ -1,4 +1,4 @@
-import {snack} from '../array/array.js'
+import {snack} from '../array/array_old.js'
 import { openOtherModal } from '../modalwindow/modalwindow.js'
 
 function snacks() {

@@ -1,7 +1,9 @@
-import {newpop} from '../array/array.js';
+import { Newpops } from '../array/array.js';
 
-function popnew() {
-    for (let i = 0; i < newpop.length; i++) {
+async function popnew() {
+    let newpop = await Newpops()
+    
+    for (let i in newpop) {
         let card = `
         <div class="bar-card_image_small">
             <img src="${newpop[i].src}">
@@ -11,7 +13,6 @@ function popnew() {
             <p class="card_price">от ${newpop[i].cost}&#8381</p>
         </div>
         `
-        
     let pizzaCard = document.createElement('div')
     pizzaCard.className = 'new-and-pop_card'
     pizzaCard.innerHTML = card

@@ -1,8 +1,8 @@
-import { pizza } from "../array/array.js"
-import { kombo } from "../array/array.js"
-import { snack } from "../array/array.js"
-import { desert } from "../array/array.js"
-import { beverage } from "../array/array.js"
+import { pizza } from "../array/array_old.js"
+import { kombo } from "../array/array_old.js"
+import { snack } from "../array/array_old.js"
+import { desert } from "../array/array_old.js"
+import { beverage } from "../array/array_old.js"
 
 
 // Modal Window for Pizza // open and create

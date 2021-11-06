@@ -1,4 +1,6 @@
-const footer = `
+function footer() {
+
+return `
 <div class="footer_row-1">
     <div class="footer-list">
         <ul class="footer-list_ul">
@@ -72,4 +74,6 @@ const footer = `
     </div>
 </div>
 `
+}
+
 export default footer 

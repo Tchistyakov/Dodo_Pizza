@@ -19,7 +19,7 @@ function currentSlide(n) {
 }
 
 /* Функция перелистывания: */
-function showSlides(n) {
+export  function showSlides(n) {
     /* Обращаемся к элементам с названием класса "item", то есть к картинкам: */
     let slides = document.getElementsByClassName("item");
     
@@ -36,5 +36,5 @@ function showSlides(n) {
         slide.style.display = "none";
     }
     /* Делаем элемент блочным: */
-    slides[slideIndex - 1].style.display = "block";    
+    // slides[slideIndex - 1].style.display = "block";    
 }

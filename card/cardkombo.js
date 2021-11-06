@@ -1,4 +1,4 @@
-import {kombo} from '../array/array.js'
+import {kombo} from '../array/array_old.js'
 import { openOtherModal } from '../modalwindow/modalwindow.js'
 
 function combos() {

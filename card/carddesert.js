@@ -1,4 +1,4 @@
-import {desert} from '../array/array.js'
+import {desert} from '../array/array_old.js'
 import { openOtherModal } from '../modalwindow/modalwindow.js'
 
 function deserts() {

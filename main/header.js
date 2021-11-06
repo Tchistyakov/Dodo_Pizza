@@ -1,4 +1,6 @@
-const header = `
+function header() {
+
+    return `
         <div class="main-header__static-menu">
             <div class="main-header__static-menu_column-1">
                 <figure class="static-menu__logotype"> <!--Для desktop версии-->
@@ -29,5 +31,6 @@ const header = `
             </div>
         </div>
 `
+}
 
 export default header 
