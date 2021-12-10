@@ -1,0 +1,55 @@
+.btn_primary {
+  margin-right: 20px;
+  background: #f96900;
+  border-radius: 50px;
+  border: 0;
+}
+
+.btn_primary:hover {
+  background-color: #ed5d08;
+  cursor: pointer;
+}
+
+.btn_secondary {
+  margin-right: 20px;
+  background: #fff0e6;
+  border-radius: 50px;
+  border: 0;
+}
+
+.btn_secondary:hover {
+  background-color: #ffd0b2;
+  cursor: pointer;
+}
+
+.btn_ligth {
+  background: #f3f3f7;
+  border-radius: 50px;
+  border: 0;
+}
+
+.btn_ligth:hover {
+  background: #f3f3f7;
+}
+
+.btn_size_primary {
+  width: 120px;
+  height: 40px;
+}
+
+.btn_size_big {
+  width: 320px;
+  height: 48px;
+}
+
+.btn_size_small {
+  width: 70px;
+  height: 32px;
+}
+
+.btn_position_big {
+  position: absolute;
+  top: 532px;
+  margin-top: -75px;
+  position: fixed;
+}
